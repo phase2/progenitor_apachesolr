@@ -16,9 +16,13 @@ projects[facetapi][version] = 1.5
 projects[apachesolr][version] = 1.7
 ; Show all fields indexed to SOLR in Field Bias Admin UI
 projects[apachesolr][patch][2365967] = http://www.drupal.org/files/issues/2365967-apachesolr_search-field_bias-1.patch
+; Modify 'spellcheck.q' instead of just 'q' to keep resulting parameter out of "Did You Mean?" display.
+projects[apachesolr][patch][2315191] = http://www.drupal.org/files/issues/2315191-2.patch
+; Improved robustness of spelling correction.
+projects[apachesolr][patch][2315211] = http://www.drupal.org/files/issues/2315211-2.patch
 
 projects[apachesolr_views][version] = 1.0-beta3
 ; Support multi-value and negative contextual filters.
 projects[apachesolr_views][patch][2085217] = http://www.drupal.org/files/issues/2085217-apache_solr_views-contextual-multi-8-alpha3-do-not-test.patch
 ; Use different Drupal-side SOLR query caches for different views by name, display, and argument.
-projects[apachesolr_views][patch][1766254] = https://www.drupal.org/files/issues/1766254-apachesolr_views-searcher-18.patch
+projects[apachesolr_views][patch][1766254] = http://www.drupal.org/files/issues/1766254-apachesolr_views-searcher-18.patch
